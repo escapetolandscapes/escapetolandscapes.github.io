@@ -6,18 +6,23 @@ html, body{
 	color: #333;
 	padding: 0;
 	margin: 0;
+	height: 100%;
 }
 body{
 	background: rgba(255,255,255, 0.9);
-	display: flex;
-	  min-height: 100vh;
-	  flex-direction: column;
 }
 .container{
-	/*min-height: 100%;*/
-	flex: 1;
+	min-height: 100%;
 	width: 100%;
 	margin: 0 auto;
+	margin-bottom: -50px; 
+}
+.container:after {
+  content: "";
+  display: block;
+}
+.footer-container, .page-wrap:after {
+  height: 50px; 
 }
 .container .logo{
 	margin: 60px auto 0; 
@@ -87,9 +92,7 @@ body{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding: 10px;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.7;
-	/*position: absolute;
-    bottom: 0;
-    width: 100%;*/
+    width: 100%;
 }
