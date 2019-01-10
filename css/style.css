@@ -1,14 +1,95 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-.icon-block {
-  padding: 0 15px;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Timmana');
+ 
+html, body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: #333;
+	padding: 0;
+	margin: 0;
 }
-.icon-block .material-icons {
-	font-size: inherit;
+body{
+	background: rgba(255,255,255, 0.9);
+	display: flex;
+	  min-height: 100vh;
+	  flex-direction: column;
+}
+.container{
+	/*min-height: 100%;*/
+	flex: 1;
+	width: 100%;
+	margin: 0 auto;
+}
+.container .logo{
+	margin: 60px auto 0; 
+	text-align: center;
+	max-width: 200px;
+}
+.container .title{
+	text-align: center;
+	font-size: 36px;
+	font-family: 'Timmana';
+	margin: 0 auto 20px;
+}
+.container .info{
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.container .info p{
+	text-align: center;
+	font-weight: 300;
+}
+.container .info p .big{
+	font-size: 20px;
+}
+.container .info h4{
+	text-align: center;
+	font-size: 20px;
+}
+
+.insta{
+	margin-top: 80px;
+	position: relative;
+}
+
+.insta .follow-btn{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+.insta .follow-btn:after{
+	content: '#escapetolandscapes';
+    display: block;
+    background: rgba(255,255,255,0.9);
+    font-size: 14px;
+    text-align: center;
+    padding: 3px 0;
+    text-decoration: underline;
+    font-weight: 600;
+    color: #000;
+    border-radius: 3px;
+}
+.insta .follow-btn img{
+	max-width: 140px;
+    border-radius: 5px;
+}
+.instagram-slider img{
+	max-width: 100%;
+}
+
+.footer-container{
+	background: #000008;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 1.7;
+	/*position: absolute;
+    bottom: 0;
+    width: 100%;*/
 }
