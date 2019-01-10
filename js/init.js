@@ -1,21 +1,21 @@
 function getSlidesToShow() {
 	var width = window.innerWidth;
 	var imgWidth = width/8;
-	if(width < 1200) {
+	if(width > 1200) {
 		imgWidth = width/8;
-	} else if (width < 1024) {
+	} else if (width > 1024) {
 		imgWidth = width/7;
-	} else if (width < 901) {
+	} else if (width > 901) {
 		imgWidth = width/6;
-	} else if (width < 768) {
-		imgWidth = width/6;
-	} else if (width < 600) {
+	} else if (width > 768) {
 		imgWidth = width/5;
-	} else if (width < 450) {
+	} else if (width > 600) {
 		imgWidth = width/4;
-	} else if (width < 375) {
+	} else if (width > 450) {
 		imgWidth = width/3.5;
-	} else if (width < 360) {
+	} else if (width > 375) {
+		imgWidth = width/3;
+	} else if (width > 360) {
 		imgWidth = width/3;
 	}
 	return Math.min(Math.floor(width/imgWidth), 19);
